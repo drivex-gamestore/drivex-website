@@ -2,7 +2,7 @@
 
 import React, { createContext, useState, useRef, useEffect } from 'react';
 import { motion, animate } from 'framer-motion';
-import { easingDefinitionToFunction } from '@shared/utils/easings';
+import { easingDefinitionToFunction } from '@components/animations/utils/easings';
 import { cx } from '@libs/vendor';
 
 export function stagger(amount = 0.1, { startDelay = 0, from = 0, ease } = {}) {

@@ -1,5 +1,5 @@
 import { useBreakpoint } from "@hooks/useIsTouchDevice";
-import { ASCII_REVEAL_DURATION } from "@shared/constants/constants";
+import { ASCII_REVEAL_DURATION } from "@constants/constants";
 
 const asciiDelayBase = 0.1 * ASCII_REVEAL_DURATION;
 

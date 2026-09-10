@@ -3,7 +3,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { cx } from "@libs/vendor"; 
-import { useIsTouchDevice } from "@shared/hooks/useIsTouchDevice";
+import { useIsTouchDevice } from "@hooks/useIsTouchDevice";
 import { HoverImage } from "@modules/webgl/components/HoverImage";
 
 import { AsciiEffectPass } from "@modules/webgl/components/AsciiEffectPass";

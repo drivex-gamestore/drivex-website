@@ -3,7 +3,7 @@ import { PortableText } from '@portabletext/react';
 import { stegaClean } from '@sanity/client/stega';
 import { AnimatedProse } from '@components/animations/AnimatedProse'; 
 import { AnimatedText } from '@components/animations/AnimatedText'; 
-import { InnerParallax } from '@features/parallaxs/InnerParallax';
+import { InnerParallax } from '@components/ui/InnerParallax';
 import { SanityMedia } from '@modules/sanity/components/SanityMedia';
 import { SanityLink } from '@modules/sanity/components/SanityLink';
 import { cx } from '@libs/vendor';

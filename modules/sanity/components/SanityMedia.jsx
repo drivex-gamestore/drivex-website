@@ -1,4 +1,4 @@
-import { HIGH_RES_SOURCE_WIDTHS } from '@shared/constants/constants'; 
+import { HIGH_RES_SOURCE_WIDTHS } from '@constants/constants'; 
 import { SanityImage } from '@modules/sanity/components/SanityImage'; 
 import { SanityVideo } from '@modules/sanity/components/SanityVideo'; 
 import { ExternalVideo } from '@modules/sanity/components/ExternalVideo'; 

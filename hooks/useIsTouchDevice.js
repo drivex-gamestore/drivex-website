@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useIsoLayoutEffect } from '@hooks/useIsoLayoutEffect';
-import { screens } from '@shared/constants/screens';
+import { screens } from '@constants/screens';
 
 function useMediaQuery(query, initializeWithValue) {
   const [matches, setMatches] = useState(initializeWithValue !== undefined ? initializeWithValue : false);
