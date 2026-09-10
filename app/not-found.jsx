@@ -10,7 +10,7 @@ import { useAsciiDelay } from '@hooks/useAsciiDelay';
 import { useIsTouchDevice } from '@hooks/useIsTouchDevice';
 import { useMousePosition } from '@hooks/useMousePosition';
 import { usePageEnter } from '@hooks/usePageEnter';
-import { useHideFooter } from '@modules/providers/FooterProvider';
+import { useHideFooter } from '@modules/providers/FooterVisibilityProvider';
 import { ASCII_GSAP_DURATION, ASCII_EASE, ASCII_COLOR_DELAY } from '@constants/constants';
 
 const AsciiTypewriter = dynamic(

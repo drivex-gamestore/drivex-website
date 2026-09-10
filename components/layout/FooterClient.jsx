@@ -12,7 +12,7 @@ import { cx } from '@libs/vendor';
 import { GoodFellaWatermark } from '@components/ui/GoodFellaWatermark'; 
 import { SpotsBadge } from '@components/ui/SpotsBadge';
 import { NewsletterForm } from '@modules/forms/components/NewsletterForm';
-import { AsciiTypewriterWrapper } from './AsciiTypewriterWrapper';
+import { AsciiTypewriterWrapper } from '@modules/webgl/components/AsciiTypewriterWrapper';
 
 const BRAND_COLOR = "#FB460D";
 
