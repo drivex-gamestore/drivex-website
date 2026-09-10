@@ -28,7 +28,7 @@ const headerQuery = `*[_type == "siteSettings"][0]{
 }`;
 
 export default async function Header() {
-  const headerData = await client.fetch(headerQuery);
+  const headerData = await sanityClient.fetch(headerQuery);
   return (
     <HeaderClient 
       navItems={headerData?.navItems || []}
