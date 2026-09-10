@@ -235,9 +235,15 @@ export function HeaderClient({ navItems, headerCta, flyout, spotsRemaining }) {
                 <MenuToggle isOpen={isMenuOpen} onClick={toggleMenu} />
               </div>
               {headerCta?.text ? (
-                <AnimatedButton size="sm" theme="brand" className="hidden justify-self-end lg:inline-flex" onClick={() => openModal("cal-booking")}>
-                  {headerCta.text}
-                </AnimatedButton>
+                <div className="hidden justify-self-end lg:block">
+                  <AnimatedButton
+                    size="sm"
+                    theme="brand"
+                    onClick={() => openModal("cal-booking")}
+                  >
+                    {headerCta.text}
+                  </AnimatedButton>
+                </div>
               ) : (
                 <div className="hidden lg:block" />
               )}
@@ -249,3 +255,4 @@ export function HeaderClient({ navItems, headerCta, flyout, spotsRemaining }) {
     </>
   );
 }
+
