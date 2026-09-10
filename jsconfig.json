@@ -12,6 +12,7 @@
     "paths": {
     "@/*": ["./*"],
     "@app/*": ["./app/*"],
+    "env": ["./env.mjs"],
     "@components/*": ["./components/*"],
     "@constants/*": ["./constants/*"],
     "@libs/*": ["./libs/*"],

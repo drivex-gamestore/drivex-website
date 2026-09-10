@@ -10,8 +10,6 @@ import { AsciiEffectPass } from "@modules/webgl/components/AsciiEffectPass";
 import { DemandFrameloop } from "@modules/webgl/components/DemandFrameloop";
 import { DEFAULT_CHARACTERS } from "@modules/webgl/effects/AsciiEffect";
 
-
-
 function preventContextLost(event) {
   event.preventDefault();
 }
