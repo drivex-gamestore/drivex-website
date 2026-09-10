@@ -6,7 +6,7 @@ import LocalFont from 'next/font/local';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistMono = LocalFont({
-  src: '../../public/fonts/GeistMono[wght].woff2',
+  src: '../public/fonts/GeistMono[wght].woff2',
   variable: '--font-geist-mono',
   preload: false,
 });
