@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback, useMemo, useRef, useLayoutEffect } from 'react';
-import { useLenis, getLenis } from 'drivex-loader';
-
+import { useLenis, getLenis } from '@drivexstudio/animations';
 import { AnimatedButton } from '@components/animations/AnimatedButton'; 
 import { useAsciiDelay } from '@hooks/useAsciiDelay'; 
 import { useBreakpoint } from '@hooks/useIsTouchDevice'; 

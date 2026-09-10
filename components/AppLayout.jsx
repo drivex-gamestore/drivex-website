@@ -1,4 +1,4 @@
-import { Preloader } from 'drivex-loader';   
+import { Preloader } from '@drivexstudio/animations';   
 import Header from '@components/layout/Header';
 import { LazyCustomCursor } from '@components/animations/LazyCustomCursor';
 import { GridOverlay } from '@components/ui/GridOverlay';

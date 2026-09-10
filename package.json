@@ -36,7 +36,7 @@
     "clsx": "^2.1.1",
     "class-variance-authority": "^0.7.1",
     
-    "drivex-loader": "^1.1.0",
+    "@drivexstudio/animations": "^1.0.4",
 
     "next-sanity": "^13.3.3",
     "@sanity/client": "^7.25.0",

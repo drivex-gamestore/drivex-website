@@ -1,5 +1,5 @@
 "use client";
-import { LenisProvider, PreloaderProvider, PageTransitionProvider } from 'drivex-loader';
+import { LenisProvider, PreloaderProvider, PageTransitionProvider } from '@drivexstudio/animations';
 
 export default function AppProviders({ children }) {
   return (
