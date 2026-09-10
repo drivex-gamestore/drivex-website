@@ -1,4 +1,4 @@
-import { client } from '@/sanity/lib/client';
+import { client } from '@modules/sanity/client';
 import { HeaderClient } from '@components/layout/HeaderClient';
 
 const headerQuery = `*[_type == "siteSettings"][0]{
