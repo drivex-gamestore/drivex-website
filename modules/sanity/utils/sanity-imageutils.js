@@ -1,5 +1,5 @@
 import { createImageUrlBuilder } from "@sanity/image-url";
-import { projectId, dataset } from '@/sanity/env';
+import { projectId, dataset } from '@/env';
 import {
   DEFAULT_MAX_WIDTH,
   DEFAULT_MAX_HEIGHT,
