@@ -1,5 +1,5 @@
 import { createImageUrlBuilder } from "@sanity/image-url";
-import { projectId, dataset } from '@/env';
+import { env } from '@/env';
 import {
   DEFAULT_MAX_WIDTH,
   DEFAULT_MAX_HEIGHT,
@@ -8,8 +8,8 @@ import {
 import { run } from '@modules/sanity/utils/run';
 
 const builder = createImageUrlBuilder({
-  projectId,
-  dataset
+  projectId: env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: env.NEXT_PUBLIC_SANITY_DATASET
 });
 
 const defaultImageOptions = { auto: "format", quality: 90 };
@@ -133,4 +133,4 @@ export function getImageSrcSet(image, options = {}) {
 
     return srcSetEntries;
   }).filter(Boolean).join(", ");
-}
+}}
