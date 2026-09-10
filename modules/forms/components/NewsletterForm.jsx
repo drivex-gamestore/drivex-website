@@ -1,15 +1,12 @@
-// module id: 973456
 "use client";
 
 import { useRef, useState, useActionState, useEffect, startTransition } from 'react';
-import { Input } from './Input';
-import { AnimatedButton } from '../components/AnimatedButton'; // module id: 411602
-import { FormHoneypot } from '../components/FormHoneypot'; // module id: 253572
-import { useSpamPrevention } from '../hooks/useSpamPrevention'; // module id: 989026
-import { cx } from '../utils/classes'; // module id: 801335
-
-// TODO: source not present in bundle (Server Action)
-import { subscribeToNewsletter } from '../actions/newsletter'; 
+import { AnimatedButton } from '@drivexstudio/animations';
+import { Input } from '@modules/forms/components/Input';
+import { FormHoneypot } from '@modules/forms/components/FormHoneypot'; 
+import { useSpamPrevention } from '@modules/forms/hooks/useSpamPrevention'; 
+import { cx } from '@libs/vendor'; 
+import { subscribeToNewsletter } from '@libs/actions/newsletter'; 
 
 export function NewsletterForm({
   heading,

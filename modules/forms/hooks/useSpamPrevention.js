@@ -1,0 +1,1 @@
+export { useSpamPrevention } from '@modules/forms/components/FormHoneypot';
