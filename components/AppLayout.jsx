@@ -5,6 +5,7 @@ import { GridOverlay } from '@components/ui/GridOverlay';
 import { PageTransitionOverlay } from '@components/transitions/PageTransitionOverlay';
 import { LazyPageTransitionRectangles } from '@components/transitions/LazyPageTransitionRectangles';
 import { PageTransitionScrollLock } from '@components/transitions/PageTransitionScrollLock';
+import Footer from '@components/layout/Footer';
 
 export default function AppLayout({ children }) {
   return (
@@ -19,6 +20,7 @@ export default function AppLayout({ children }) {
         </main>
       <GridOverlay />
       <LazyCustomCursor />
+      <Footer />
     </>
   );
 }

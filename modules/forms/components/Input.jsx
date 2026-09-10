@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import { cva, cx } from '@libs/vendor';
 
-export const inputVariants = cva({
+const inputVariants = cva({
   base: [
     "flex w-full border border-border bg-surface font-sans text-foreground",
     "file:border-0 file:bg-transparent file:font-medium",
@@ -20,12 +20,12 @@ export const inputVariants = cva({
   }
 });
 
-export const Input = forwardRef(({ className, type, size, ...props }, ref) => (
-  <input
-    type={type}
-    ref={ref}
-    className={cx(inputVariants({ size }), className)}
-    {...props}
+export const Input = forwardRef(({ className, type, size, ...rest }, ref) => (
+  <input 
+    type={type} 
+    ref={ref} 
+    className={cx(inputVariants({ size }), className)} 
+    {...rest} 
   />
 ));
 
