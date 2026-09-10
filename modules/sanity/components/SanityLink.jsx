@@ -151,7 +151,7 @@ export function SanityLink(props) {
   const download = link.canDownload ? "" : undefined;
 
   return (
-    <Link href={link.href} target={target} rel={rel} download={download} {...rest}>
+  <Link href={link.href || "#"} target={target} rel={rel} download={download} {...rest}>    
       {content}
     </Link>
   );
