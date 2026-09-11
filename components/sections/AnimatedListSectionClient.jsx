@@ -4,7 +4,7 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useLenis } from '@modules/providers/LenisProvider';
 import { easings } from '@components/animations/utils/easings';
-import { ScrollAnimatedHeadline } from '@animations/components/ScrollAnimatedHeadline';
+import { ScrollAnimatedHeadline } from '@drivexstudio/animations';
 import { SanityMedia } from '@modules/sanity/components/SanityMedia';
 import { SanityImage } from '@modules/sanity/components/SanityImage';
 

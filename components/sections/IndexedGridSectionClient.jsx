@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 import { cx } from '@libs/vendor';
 import { easings } from '@components/animations/utils/easings';
-import { ScrollAnimatedHeadline } from '@animations/components/ScrollAnimatedHeadline';
-import { ScrambleText } from '@animations/components/ScrambleText';
+import { ScrollAnimatedHeadline } from '@drivexstudio/animations';
+import { ScrambleText } from '@drivexstudio/animations';
 import { ScrambleGroup } from '@shared/contexts/ScrambleContext';
 
 const { power3Out, backOut } = easings;

@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { usePageEnter } from "@hooks/usePageEnter";
 import { usePageEnterContext } from "@modules/providers/PageEnterProvider";
 import { AnimatedHeadline } from "@components/animations/AnimatedHeadline";
-import { AnimatedSubtext } from "@animations/components/AnimatedSubtext";
+import { AnimatedSubtext } from "@drivexstudio/animations";
 import { cx } from "@libs/vendor";
 
 export default function HeroTextOnly({

@@ -3,7 +3,6 @@
 import { useMemo, useRef } from "react";
 import { useGSAP, gsap } from '@libs/vendor';
 import { AnimatedHeadline, AnimatedSubtext } from "@drivexstudio/animations";
-
 import { ButtonGroup } from "@components/ui/ButtonGroup"; 
 import { useAsciiDelay } from "@hooks/useAsciiDelay"; 
 import { usePageEnter } from "@hooks/usePageEnter"; 

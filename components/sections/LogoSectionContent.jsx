@@ -6,7 +6,7 @@ import { usePageEnter } from "@hooks/usePageEnter";
 import { usePageEnterContext } from "@modules/providers/PageEnterProvider"; 
 import { SanityImage } from "@modules/sanity/components/SanityImage"; 
 import { getImageSrc } from '@modules/sanity/utils/sanity-imageutils';
-import { LOGO_HEIGHTS, getLogoSizeVars } from '@components/utilities/getLogoSizeVars';
+import { LOGO_HEIGHTS, getLogoSizeVars } from '@components/sections/shared/getLogoSizeVars';
 
 export default function LogoSectionContent({ trustedBy, theme }) {
 

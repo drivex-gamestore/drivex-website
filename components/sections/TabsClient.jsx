@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ScrollAnimatedHeadline } from "@animations/components/ScrollAnimatedHeadline";
+import { ScrollAnimatedHeadline } from "@drivexstudio/animations";
 import { SanityRichText } from "@modules/sanity/components/SanityRichText";
 import { clsx as cx } from "clsx";
 

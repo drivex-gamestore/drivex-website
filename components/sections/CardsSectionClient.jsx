@@ -4,8 +4,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { easings } from '@components/animations/utils/easings';
-import { RollerNumber } from '@animations/components/RollerNumber';
-import { ScrambleText } from '@animations/components/ScrambleText';
+import { RollerNumber } from '@drivexstudio/animations';
+import { ScrambleText } from '@drivexstudio/animations';
 import { SanityMedia } from '@modules/sanity/components/SanityMedia';
 import { useIdleGSAP } from '@hooks/useIdleGSAP';
 
