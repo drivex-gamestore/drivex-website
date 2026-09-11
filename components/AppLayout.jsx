@@ -14,13 +14,14 @@ export default function AppLayout({ children }) {
       <PageTransitionScrollLock />
       <PageTransitionOverlay />
       <LazyPageTransitionRectangles />
-      <Header />
+       <GridOverlay />
+       <LazyCustomCursor>
+        <Header />
        <main className="relative z-[1]">
          {children}
         </main>
-      <GridOverlay />
-      <LazyCustomCursor />
       <Footer />
+      </LazyCustomCursor>
     </>
   );
 }
