@@ -8,20 +8,23 @@ async function getHomepageData() {
       enabled,
       "section": sectionRef->{
         _type,
+        
         _type == "heroSection" => {
           "headline": content.headline,
           "headlineLevel": content.headlineLevel,
           "headlineDisplay": content.headlineDisplay,
           "subtext": content.subtext,
-          "ctas": content.ctas {
-            layout,
-            gap,
-            buttons[]{ text, href, theme, variant }
+          
+          "ctas": content.ctas.buttons[]{ 
+            "label": text, 
+            "link": href, 
+            theme, 
+            variant 
           },
+
           "trustedBy": content.trustedBy.items[]{
             _type == "reference" => @-> {
-              _type,
-              name,
+              "_type": "svgItem", 
               alt,
               variant,
               svgCode
@@ -31,6 +34,7 @@ async function getHomepageData() {
               text
             }
           },
+
           "asciiImage": content.asciiImage,
           "asciiMobileFallback": content.asciiMobileFallback,
           "asciiDepthMap": content.asciiDepthMap,
