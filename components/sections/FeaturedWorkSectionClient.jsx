@@ -5,7 +5,7 @@ import { gsap, ScrollTrigger } from '@libs/vendor';
 import Link from 'next/link';
 import { useLenis } from '@modules/providers/LenisProvider';
 import { ScrollAnimatedHeadline } from '@drivexstudio/animations';
-import { FlipIndicator } from '@drivexstudio/animations';
+import { FlipIndicator } from '@components/animations/FlipIndicator';
 import { SanityButton } from '@modules/sanity/components/SanityButton';
 import { SanityMedia } from '@modules/sanity/components/SanityMedia';
 import { SanityImage } from '@modules/sanity/components/SanityImage';

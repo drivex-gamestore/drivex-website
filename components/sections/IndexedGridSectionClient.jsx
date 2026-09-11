@@ -6,15 +6,13 @@ import { cx } from '@libs/vendor';
 import { easings } from '@components/animations/utils/easings';
 import { ScrollAnimatedHeadline } from '@drivexstudio/animations';
 import { ScrambleText } from '@drivexstudio/animations';
-import { ScrambleGroup } from '@shared/contexts/ScrambleContext';
+import { ScrambleGroup } from '@drivexstudio/animations';
 
 const { power3Out, backOut } = easings;
-
 
 function Divider({ className }) {
   return <div className={cx('h-px w-full bg-border', className)} />;
 }
-
 
 export default function IndexedGridSectionClient({
   headline,

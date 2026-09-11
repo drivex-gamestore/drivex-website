@@ -36,7 +36,8 @@
     "clsx": "^2.1.1",
     "class-variance-authority": "^0.7.1",
     
-    "@drivexstudio/animations": "^1.0.4",
+    "@drivexstudio/animations": "^1.0.7",
+    
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.43.4",    
 
