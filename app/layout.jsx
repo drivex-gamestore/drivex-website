@@ -18,6 +18,11 @@ export const metadata = {
       : 'http://localhost:3000'
   ),
   title: "Drive X Store",
+  formatDetection: {
+    email: false,
+    telephone: false,
+    address: false,
+  },
   description:
     "Drive X is a gaming marketplace for buying and selling game accounts, items, and digital gaming products.",
   keywords: [
@@ -94,6 +99,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://p.typekit.net" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://eu-assets.i.posthog.com" />
         <link rel="stylesheet" href="https://use.typekit.net/tdy7azi.css" />
+        <meta name="format-detection" content="email=no, telephone=no, address=no" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body data-transition-phase="idle">
@@ -103,7 +109,6 @@ export default function RootLayout({ children }) {
             <SpeedInsights />
           </AppLayout>
         </AppProviders>
-        
         <Script
           id="website-schema"
           type="application/ld+json"

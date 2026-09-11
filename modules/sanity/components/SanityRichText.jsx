@@ -8,7 +8,6 @@ import { SanityMedia } from '@modules/sanity/components/SanityMedia';
 import { SanityLink } from '@modules/sanity/components/SanityLink';
 import { cx } from '@libs/vendor';
 
-
 const blockComponents = {
   mediaBlock: function ({ value, className }) {
     if (!value) return null;
