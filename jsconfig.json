@@ -18,8 +18,7 @@
     "@constants/*": ["./constants/*"],
     "@libs/*": ["./libs/*"],
     "@hooks/*": ["./hooks/*"],
-    "@modules/*": ["./modules/*"],
-    "@schemaTypes/*": ["./sanity/schemaTypes/*"]
+    "@modules/*": ["./modules/*"]
     }
   },
   
