@@ -1,0 +1,7 @@
+
+relative 
+min-h-svh 
+overflow-hidden 
+bg-background 
+pt-0 
+pb-0
