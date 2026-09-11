@@ -1,5 +1,5 @@
 import { createRef } from "react";
-import { RollerNumber } from "@drivexstudio/animations"; 
+import { RollerNumber } from "@components/animations/RollerNumber"; 
 
 function parseNumber(value) {
   const match = value.trim().match(/^([€$£¥₹]?[-+]?)(\d+)([MBKx%+]*)$/i);
