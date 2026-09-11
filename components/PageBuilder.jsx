@@ -1,18 +1,8 @@
 import React from 'react';
 import HeroSection from '@components/sections/HeroSection';
-import CardsSection from '@components/sections/CardsSection';
-import AnimatedListSection from '@components/sections/AnimatedListSection';
-import FeaturedWorkSection from '@components/sections/FeaturedWorkSection';
-import IndexedGridSection from '@components/sections/IndexedGridSection';
-import AccordionSection from '@components/sections/AccordionSection';
 
 const SECTION_COMPONENTS = {
   heroSection: HeroSection,
-  cardsSection: CardsSection,
-  animatedListSection: AnimatedListSection,
-  featuredWorkSection: FeaturedWorkSection,
-  indexedGridSection: IndexedGridSection,
-  accordionSection: AccordionSection,
 };
 
 export default function PageBuilder({ sections }) {

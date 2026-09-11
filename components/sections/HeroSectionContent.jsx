@@ -2,16 +2,15 @@
 
 import { useMemo, useRef } from "react";
 import { useGSAP, gsap } from '@libs/vendor';
-import { AnimatedHeadline } from "@components/animations/AnimatedHeadline"; 
-import { AnimatedSubtext } from "@animations/components/AnimatedSubtext"; 
-import { ButtonGroup } from "@components/utilities/ButtonGroup"; 
+import { AnimatedHeadline, AnimatedSubtext } from "@drivexstudio/animations";
+
+import { ButtonGroup } from "@components/ui/ButtonGroup"; 
 import { useAsciiDelay } from "@hooks/useAsciiDelay"; 
 import { usePageEnter } from "@hooks/usePageEnter"; 
 import { usePageEnterContext } from "@modules/providers/PageEnterProvider"; 
 import { SanityImage } from "@modules/sanity/components/SanityImage"; 
 import { cx } from '@libs/vendor';
-import { LOGO_HEIGHTS, getLogoSizeVars } from "@components/utilities/getLogoSizeVars"; 
-
+import { LOGO_HEIGHTS, getLogoSizeVars } from "@components/sections/shared/getLogoSizeVars"; 
 
 export function HeroSectionContent({
   className,
