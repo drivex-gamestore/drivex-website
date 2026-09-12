@@ -1,8 +1,7 @@
 "use client";
-
 import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { gsap, SplitText } from '@libs/vendor';
-import { ScrambleGroup } from '@shared/contexts/ScrambleContext';
+import { ScrambleGroup } from '@drivexstudio/animations';
 import { ScrambleText } from '@drivexstudio/animations';
 import { SanityRichText } from '@modules/sanity/components/SanityRichText';
 import { useBreakpoint } from '@hooks/useIsTouchDevice';
@@ -192,4 +191,3 @@ export default function AccordionClient({
     </ScrambleGroup>
   );
 }
-
