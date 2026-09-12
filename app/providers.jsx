@@ -1,14 +1,13 @@
 "use client";
 
 import React from "react";
-
 import { Preloader } from "@drivexstudio/animations"; 
 import { PreloaderProvider } from "@drivexstudio/animations"; 
 import { LenisProvider } from "@drivexstudio/animations"; 
 import { GridOverlay } from "@components/ui/GridOverlay";
-import { PageTransitionOverlay } from "@components/transitions/PageTransitionOverlay";
-import { LazyPageTransitionRectangles } from "@components/transitions/LazyPageTransitionRectangles";
-import { PageTransitionScrollLock } from "@components/transitions/PageTransitionScrollLock";
+import { PageTransitionOverlay } from "@modules/transitions/PageTransitionOverlay";
+import { LazyPageTransitionRectangles } from "@modules/transitions/LazyPageTransitionRectangles";
+import { PageTransitionScrollLock } from "@modules/transitions/PageTransitionScrollLock";
 import { LazyCustomCursor } from "@components/animations/LazyCustomCursor";
 import { SyncBodyTheme } from "@constants/SyncBodyTheme";
 

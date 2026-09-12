@@ -10,7 +10,7 @@ import { ButtonGroup } from "@components/ui/ButtonGroup";
 import { Image } from "@modules/sanity/components/Image"; 
 import { SanityMedia } from "@modules/sanity/components/SanityMedia"; 
 import { getImageSrc, getImageSrcSet } from "@modules/sanity/utils/sanity-imageutils"; 
-import { DriveXWatermark } from "@components/utilities/DriveXWatermark"; 
+import { GoodFellaWatermark as DriveXWatermark } from "@components/ui/GoodFellaWatermark";
 import { cx } from '@libs/vendor';
 import { HIGH_RES_SOURCE_WIDTHS } from "@constants/constants"; 
 
