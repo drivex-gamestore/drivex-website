@@ -4,6 +4,7 @@ import CardsSection from '@sections/CardsSection';
 import AnimatedListSection from '@sections/AnimatedListSection';
 import FeaturedWorkSection from '@sections/FeaturedWorkSection';
 import IndexedGridSection from '@sections/IndexedGridSection';
+import AccordionSection from '@sections/AccordionSection';
 
 const SECTION_COMPONENTS = {
   heroSection: HeroSection,
@@ -11,6 +12,8 @@ const SECTION_COMPONENTS = {
   animatedListSection: AnimatedListSection,
   featuredWorkSection: FeaturedWorkSection,
   indexedGridSection: IndexedGridSection,
+  accordionSection: AccordionSection,
+  contentBlockSection: ContentBlockSection,
 };
 
 export default function PageBuilder({ sections }) {
