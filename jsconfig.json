@@ -15,9 +15,9 @@
     "env": ["./env.mjs"],
     "@components/*": ["./components/*"],
     "@sections/*": ["./components/sections/*"],
-    "@constants/*": ["./constants/*"],
+    "@constants/*": ["./libs/constants/*"],
     "@libs/*": ["./libs/*"],
-    "@hooks/*": ["./hooks/*"],
+    "@hooks/*": ["./libs/hooks/*"],
     "@modules/*": ["./modules/*"]
     }
   },

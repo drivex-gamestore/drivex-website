@@ -1,10 +1,31 @@
 import { sanityClient } from '@modules/sanity/client';
-import PageBuilder from '@components/PageBuilder';
+
+import HeroSection from '@sections/hero/HeroSection';
+import ContentBlockSection from '@sections/ContentBlockSection';
+import {
+  CardsSection,
+  AnimatedListSection,
+  FeaturedWorkSection,
+  IndexedGridSection,
+  AccordionSection,
+} from '@sections/ComponentSections';
 
 const SECTION_PROJECTION = `{
   ...,
   ...content
 }`;
+
+// Maps each Sanity section `_type` to the component that renders it.
+// Adding a new section type only requires one new line here.
+const SECTION_COMPONENTS = {
+  heroSection: HeroSection,
+  cardsSection: CardsSection,
+  animatedListSection: AnimatedListSection,
+  featuredWorkSection: FeaturedWorkSection,
+  indexedGridSection: IndexedGridSection,
+  accordionSection: AccordionSection,
+  contentBlockSection: ContentBlockSection,
+};
 
 async function getHomepageData() {
   const query = `*[_type == "homePage"][0]{
@@ -17,6 +38,7 @@ async function getHomepageData() {
 
   return await sanityClient.fetch(query, {}, { next: { revalidate: 60 } });
 }
+
 export default async function HomePage() {
   const data = await getHomepageData();
 
@@ -25,6 +47,16 @@ export default async function HomePage() {
     .map((item) => ({ ...item.section, _key: item._key }));
 
   return (
-    <PageBuilder sections={sections} />
+    <>
+      {sections.map((section) => {
+        const Component = SECTION_COMPONENTS[section._type];
+
+        if (!Component) {
+          console.warn(`Missing component for section type: ${section._type}`);
+          return null;
+        }
+        return <Component key={section._key} data={section} />;
+      })}
+    </>
   );
 }

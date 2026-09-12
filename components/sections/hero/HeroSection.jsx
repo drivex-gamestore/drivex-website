@@ -1,7 +1,7 @@
 import { getImageSrc } from "@modules/sanity/utils/sanity-imageutils";
-import { HeroSectionContent } from "@components/sections/HeroSectionContent";
-import { HeroAsciiArt } from "@components/sections/HeroAsciiArt";
-import { HeroScrollPush } from "@components/sections/HeroScrollPush";
+import { HeroSectionContent } from "./HeroSectionContent";
+import { HeroAsciiArt } from "./HeroAsciiArt";
+import { HeroScrollPush } from "./HeroScrollPush";
 
 const SECTION_CLASS_NAME =
   "relative min-h-svh overflow-hidden bg-background pt-0 pb-0";

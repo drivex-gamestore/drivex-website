@@ -1,12 +1,14 @@
 import React from 'react';
 
-import HeroSection from '@sections/HeroSection';
-import CardsSection from '@sections/CardsSection';
-import AnimatedListSection from '@sections/AnimatedListSection';
-import FeaturedWorkSection from '@sections/FeaturedWorkSection';
-import IndexedGridSection from '@sections/IndexedGridSection';
-import AccordionSection from '@sections/AccordionSection';
+import HeroSection from '@sections/hero/HeroSection';
 import ContentBlockSection from '@sections/ContentBlockSection';
+import {
+  CardsSection,
+  AnimatedListSection,
+  FeaturedWorkSection,
+  IndexedGridSection,
+  AccordionSection,
+} from '@sections/ComponentSections';
 
 const SECTION_COMPONENTS = {
   heroSection: HeroSection,
